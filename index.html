@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page | Gianpaolo</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+
+        <section class="container-form registrati">
+            <form>
+                <h1>Registrati</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p>oppure registrati con email e password</p>
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="password" id="psw" name="psw" placeholder="Password">
+                <button>REGISTRATI</button>
+            </form>
+        </section>
+
+        <section class="container-form accedi">
+            <form>
+                <h1>Accedi</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p>oppure entra con le tue credenziali</p>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="password" id="psw" name="psw" placeholder="Password">
+                <p>Hai dimenticato la <a href="#recuperaPassword">Password</a></p>
+                <button>ACCEDI</button>
+            </form>
+        </section>
+        
+        <section class="container-toggle">
+            <div class="toggle toggle-registrati">
+                <h1>Benvenuto!</h1>
+                <p>Registrati usando le tue informazioni per accedere alle funzionalità del sito</p>
+                <button class="hidden" id="btn-registrati">REGISTRATI</button>
+            </div>
+
+            <div class="toggle toggle-accedi">
+                <h1>Bentornato!</h1>
+                <p>Inserisci le tue credenziali per usare tutte le funzionalità del sito</p>
+                <button class="hidden" id="btn-accedi">ACCEDI</button>
+            </div>
+        </section>
+    </div>  
+</body>
+</html>

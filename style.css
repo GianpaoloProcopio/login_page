@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  color: rgb(53, 53, 53);
+}
+
+.container {
+  position: relative;
+  width: 920px;
+  max-width: 100%;
+  min-height: 450px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 6px 6px 12px 5px rgba(0, 0, 0, 0.4);
+}
+.container button {
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px 5px rgba(0, 0, 0, 0.4);
+}
+.container .container-form {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.container .container-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .container-form form h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+.container .container-form form .social-icons {
+  margin: 20px 0 30px 0;
+}
+.container .container-form form .social-icons a {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #512da8;
+  margin-left: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+.container .container-form form .social-icons a i {
+  width: 20px;
+  text-align: center;
+  color: white;
+}
+.container .container-form form .social-icons a:hover {
+  background-color: #714fc0;
+  transition: all 0.2s ease-in-out;
+}
+.container .container-form form p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.container .container-form form p a {
+  text-decoration: none;
+  color: #686868;
+}
+.container .container-form form input {
+  width: calc(100% - 40px);
+  padding: 15px 10px;
+  margin-bottom: 8px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+.container .container-form form button {
+  background-color: #512da8;
+  color: #eee;
+}
+.container .container-form form button:hover {
+  background-color: #6845ba;
+  color: white;
+}
+.container .accedi {
+  right: 0;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+.container .registrati {
+  right: 0;
+  z-index: 2;
+  transform: translateX(-100%);
+}
+.container .registrati form button {
+  margin-top: 10px;
+}
+.container .container-toggle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .container-toggle .toggle {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #512da8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 20px;
+  color: white;
+}
+.container .container-toggle .toggle h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.container .container-toggle .toggle p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .container-toggle .toggle button {
+  background-color: #eee;
+  color: #512da8;
+}
+.container .container-toggle .toggle button:hover {
+  background-color: white;
+}
+.container .container-toggle .toggle-accedi {
+  left: 0;
+  transform: translateX(100%);
+  border-radius: 0 150px 100px 0;
+  opacity: 0;
+}
+.container .container-toggle .toggle-registrati {
+  left: 0;
+  transform: translateX(100%);
+  border-radius: 150px 0 0 100px;
+  opacity: 1;
+  z-index: 1;
+}
+.container .accedi, .container .registrati, .container .toggle-accedi, .container .toggle-registrati {
+  transition: all 0.3s ease-in-out;
+}
+
+.container.active .accedi, .container.active .registrati {
+  transform: translateX(0);
+}
+.container.active .registrati {
+  z-index: 3;
+}
+.container.active .toggle-accedi, .container.active .toggle-registrati {
+  transform: translateX(0);
+}
+.container.active .toggle-accedi {
+  z-index: 3;
+  opacity: 1;
+}
+.container.active .toggle-registrati {
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */
