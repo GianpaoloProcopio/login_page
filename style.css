@@ -113,11 +113,13 @@ body {
   right: 0;
   transform: translateX(-100%);
   z-index: 2;
+  opacity: 1;
 }
 .container .registrati {
   right: 0;
   z-index: 2;
   transform: translateX(-100%);
+  opacity: 0;
 }
 .container .registrati form button {
   margin-top: 10px;
@@ -171,7 +173,7 @@ body {
   z-index: 1;
 }
 .container .accedi, .container .registrati, .container .toggle-accedi, .container .toggle-registrati {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .container.active .accedi, .container.active .registrati {
@@ -179,6 +181,10 @@ body {
 }
 .container.active .registrati {
   z-index: 3;
+  opacity: 1;
+}
+.container.active .accedi {
+  opacity: 0;
 }
 .container.active .toggle-accedi, .container.active .toggle-registrati {
   transform: translateX(0);

@@ -127,12 +127,14 @@ body{
         right: 0;
         transform: translateX(-100%);
         z-index: 2;
+        opacity: 1;
     }
 
     .registrati{
         right: 0;
         z-index: 2;
         transform: translateX(-100%);
+        opacity: 0;
 
         form{
             button{
@@ -199,7 +201,7 @@ body{
     }
 
     .accedi, .registrati, .toggle-accedi, .toggle-registrati{
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -211,6 +213,11 @@ body{
 
     .registrati{
         z-index: 3;
+        opacity: 1;
+    }
+
+    .accedi{
+        opacity: 0;
     }
 
     .toggle-accedi, .toggle-registrati{
